@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+#heart {
+    display: inline-block;
+    margin: 150px;
+    position: relative;
+    transition: all 1s;
+
+
+}
+
+
+#heart:hover {
+    transform: scale(1.2);
+
+}
+
+.a {
+    background: red;
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+
+
+
+}
+
+.b {
+    background: red;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: -50px;
+    bottom: 50px;
+    transform: rotate(45deg) translateX(26px);
+    border-radius: 50%;
+    border-radius: 50% 0 0 50%;
+}
+
+.c {
+    background: red;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: -50px;
+    bottom: 50px;
+    transform: rotate(45deg) translateY(26px);
+    border-radius: 50%;
+    border-radius: 50% 50% 0 0;
+
+}
