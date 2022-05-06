@@ -6,15 +6,39 @@
     display: inline-block;
     margin: 150px;
     position: relative;
-    transition: all 1s;
+    animation: 1.5s heart infinite alternate-reverse;
+
 
 
 }
 
 
-#heart:hover {
-    transform: scale(1.2);
+@keyframes heart {
 
+    0% {
+        transform: none;
+    }
+
+
+    20% {
+        transform: translateX(200px);
+    }
+
+    40% {
+        transform: translateX(200px) translateY(100px);
+    }
+
+    60% {
+        transform: translateX(200px) translateY(100px) translateX(-200px);
+    }
+
+    80% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
 }
 
 .a {
